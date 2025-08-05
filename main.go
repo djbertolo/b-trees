@@ -24,7 +24,7 @@ type BPlusTree struct {
 }
 
 func main() {
-	var tree *BPlusTree = NewBPlusTree(4)
+	var tree *BPlusTree = NewBPlusTree(TREE_ORDER)
 
 	var keysToInsert []int = []int{10, 20, 30, 40, 5, 15, 25, 35, 50, 60, 70, 80}
 	for _, key := range keysToInsert {
